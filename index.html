@@ -5,67 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bottleship Privacy Policy</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            color: #222;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
         .container {
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 0 auto;
             background: #fff;
-            padding: 32px 24px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
-        h1 {
-            color: #2a4d7a;
-            margin-bottom: 16px;
+        
+        .header {
+            background: linear-gradient(135deg, #2a4d7a 0%, #3a6ea5 100%);
+            color: white;
+            padding: 40px 32px;
+            text-align: center;
         }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .header .date {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding: 40px 32px;
+        }
+        
         h2 {
-            color: #3a6ea5;
-            margin-top: 32px;
+            color: #2a4d7a;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8f0fe;
         }
+        
+        h3 {
+            color: #3a6ea5;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 24px 0 12px 0;
+        }
+        
         p {
-            line-height: 1.7;
+            margin-bottom: 16px;
+            color: #555;
+        }
+        
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        strong {
+            color: #2a4d7a;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #666;
+            font-style: italic;
+        }
+        
+        a {
+            color: #3a6ea5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #2a4d7a;
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 4px solid #3a6ea5;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-section {
+            background: #f8f9ff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            border: none;
+            margin-top: 0;
+        }
+        
+        .contact-email {
+            display: inline-block;
+            background: #3a6ea5;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        
+        .contact-email:hover {
+            background: #2a4d7a;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 12px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy for Bottleship</h1>
-        <p><strong>Effective Date:</strong> July 5, 2025</p>
-        <p>Thank you for choosing Bottleship! We value your privacy and want to ensure that you understand how we handle any information related to your use of the app. This Privacy Policy outlines the data we collect, how we store it, and whether any data is transmitted off your device.</p>
-        <h2>Data We Collect</h2>
-        <p><strong>Bottleship does not collect any personal data from users.</strong> The app is designed to offer a seamless experience without the need for data collection. However, we do use the following local features:</p>
-        <ul>
-            <li><strong>Sound Preferences:</strong> We store your sound effects preferences locally on your device. This data is not shared or sent off the device.<br><em>Where it is stored:</em> UserDefaults (local storage)<br><em>Is it sent off the device?</em> No</li>
-            <li><strong>Audio Usage:</strong> The app plays sound effects. No audio is recorded or transmitted.</li>
-            <li><strong>High Scores:</strong> We store your high scores locally on your device to provide a better gaming experience. This data is not shared or transmitted off the device, except as described in the Game Center section below.<br><em>Where it is stored:</em> UserDefaults (local storage)<br><em>Is it sent off the device?</em> No (unless you use Game Center)</li>
-        </ul>
-        <h2>Data Security</h2>
-        <p>We do not collect, store, or transmit any personal data ourselves. All the data we use (such as game preferences and scores) remains on your device and is not shared with third parties, except as noted below under Third-Party Services.</p>
-        <h2>Third-Party Services</h2>
-        <h3>Game Center</h3>
-        <p>Bottleship uses Apple Game Center to provide leaderboards and achievements. If you sign in to Game Center, your high scores, achievements, and gameplay activity may be transmitted to Apple's Game Center servers and associated with your Game Center account. This information is managed by Apple. We do not control or access your Game Center profile data beyond what is necessary to display leaderboards and achievements in the app.<br>
-        For more information about how Apple handles your Game Center data, please see Apple's <a href="https://www.apple.com/legal/privacy" target="_blank">Privacy Policy</a>.</p>
-        <h3>Advertising</h3>
-        <p>Bottleship uses Google AdMob to serve ads within the app. AdMob may collect and use certain data from your device, including:</p>
-        <ul>
-            <li>Device information (such as device identifiers, IP address, and mobile network information)</li>
-            <li>Ad performance and engagement data (such as impressions, clicks, and viewing duration)</li>
-            <li>Location information (approximate location inferred from your IP address)</li>
-        </ul>
-        <p>This information may be used to personalize ads and improve ad performance. For more information about how Google uses data collected through AdMob and your choices regarding that data, please visit Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy & Terms</a> and <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.</p>
-        <h2>Managing Your Privacy Choices</h2>
-        <p>If you would like to opt out of personalized advertising, you can adjust your device settings or visit: <a href="https://adssettings.google.com/" target="_blank">Ads Settings</a>.<br>
-        You can also choose whether to sign in to Game Center in your device's settings or when prompted in the app.</p>
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this Privacy Policy periodically.</p>
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or about how we handle your data, please contact us at: <a href="mailto:bottleshipgame@gmail.com">bottleshipgame@gmail.com</a>.</p>
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="date">Bottleship</div>
+        </div>
+        
+        <div class="content">
+            <p><strong>Effective Date:</strong> July 5, 2025</p>
+            
+            <p>Thank you for choosing Bottleship! We value your privacy and want to ensure that you understand how we handle any information related to your use of the app. This Privacy Policy outlines the data we collect, how we store it, and whether any data is transmitted off your device.</p>
+            
+            <h2>Data We Collect</h2>
+            <div class="highlight-box">
+                <strong>Bottleship does not collect any personal data from users.</strong> The app is designed to offer a seamless experience without the need for data collection.
+            </div>
+            
+            <p>However, we do use the following local features:</p>
+            
+            <ul>
+                <li><strong>Sound Preferences:</strong> We store your sound effects preferences locally on your device. This data is not shared or sent off the device.<br><em>Where it is stored:</em> UserDefaults (local storage)<br><em>Is it sent off the device?</em> No</li>
+                <li><strong>Audio Usage:</strong> The app plays sound effects. No audio is recorded or transmitted.</li>
+                <li><strong>High Scores:</strong> We store your high scores locally on your device to provide a better gaming experience. This data is not shared or transmitted off the device, except as described in the Game Center section below.<br><em>Where it is stored:</em> UserDefaults (local storage)<br><em>Is it sent off the device?</em> No (unless you use Game Center)</li>
+            </ul>
+            
+            <h2>Data Security</h2>
+            <p>We do not collect, store, or transmit any personal data ourselves. All the data we use (such as game preferences and scores) remains on your device and is not shared with third parties, except as noted below under Third-Party Services.</p>
+            
+            <h2>Third-Party Services</h2>
+            
+            <h3>Game Center</h3>
+            <p>Bottleship uses Apple Game Center to provide leaderboards and achievements. If you sign in to Game Center, your high scores, achievements, and gameplay activity may be transmitted to Apple's Game Center servers and associated with your Game Center account. This information is managed by Apple. We do not control or access your Game Center profile data beyond what is necessary to display leaderboards and achievements in the app.</p>
+            <p>For more information about how Apple handles your Game Center data, please see Apple's <a href="https://www.apple.com/legal/privacy" target="_blank">Privacy Policy</a>.</p>
+            
+            <h3>Advertising</h3>
+            <p>Bottleship uses Google AdMob to serve ads within the app. AdMob may collect and use certain data from your device, including:</p>
+            <ul>
+                <li>Device information (such as device identifiers, IP address, and mobile network information)</li>
+                <li>Ad performance and engagement data (such as impressions, clicks, and viewing duration)</li>
+                <li>Location information (approximate location inferred from your IP address)</li>
+            </ul>
+            <p>This information may be used to personalize ads and improve ad performance. For more information about how Google uses data collected through AdMob and your choices regarding that data, please visit Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy & Terms</a> and <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.</p>
+            
+            <h2>Managing Your Privacy Choices</h2>
+            <p>If you would like to opt out of personalized advertising, you can adjust your device settings or visit: <a href="https://adssettings.google.com/" target="_blank">Ads Settings</a>.</p>
+            <p>You can also choose whether to sign in to Game Center in your device's settings or when prompted in the app.</p>
+            
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this Privacy Policy periodically.</p>
+            
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or about how we handle your data, please contact us:</p>
+                <a href="mailto:bottleshipgame@gmail.com" class="contact-email">bottleshipgame@gmail.com</a>
+            </div>
+        </div>
     </div>
 </body>
 </html> 
